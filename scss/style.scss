@@ -18,7 +18,7 @@ body {
     border-radius: 0 0 12px 12px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
+    gap: 60px;
     background: linear-gradient(75deg, rgba(100,62,114,1),
                 rgba(50,50,100,1),rgba(50,50,100,1));
     .title-card {
@@ -26,6 +26,11 @@ body {
         flex-direction: column;
         gap: 10px;
         align-self: stretch;
+    }
+    .box-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
     }
 
     .card {
@@ -102,19 +107,19 @@ body {
 .conteiner {
     grid-area: conteiner;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     .box {
         display: flex;
         justify-content: center;
         padding: 35px 0;
     }
 }
-
-@media (min-widht: 768px){
+@media (max-widht: 500px){
     .conteiner {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 
 .trust {
     grid-area: trust;
@@ -144,5 +149,22 @@ body {
 }
 .adtelligent {
     background: #e2e2e4;
-
+}
+.clikki {
+    background: #c71c36;
+}
+.ecoleasing {
+    background: #dcf3f9;
+}
+.infratek {
+    background: #eaeaea;
+}
+.sitipark {
+    background: #282240;
+}
+.artprintstudio {
+    background: #1d4568;
+}
+.ultimatecard {
+    background: black;
 }
