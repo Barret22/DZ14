@@ -29,7 +29,7 @@ body {
     }
     .box-card {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 60px;
     }
 
@@ -107,7 +107,7 @@ body {
 .conteiner {
     grid-area: conteiner;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     .box {
         display: flex;
         justify-content: center;
