@@ -16,8 +16,8 @@ body {
 .services {
     padding: 0 30px 60px 30px;
     border-radius: 0 0 12px 12px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 60px;
     background: linear-gradient(75deg, rgba(100,62,114,1),
                 rgba(50,50,100,1),rgba(50,50,100,1));
@@ -29,10 +29,19 @@ body {
     }
     .box-card {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 60px;
     }
-
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .box-card {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media (min-width: 1025px) {
+        .box-card {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
     .card {
         display: flex;
         flex-direction: column;
@@ -96,30 +105,37 @@ body {
 .spacer {
     height: 60px;
 }
-
 .clients {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 30px;
-    grid-template-areas: 
-    "trust"
-    "conteiner";
 }
+
 .conteiner {
-    grid-area: conteiner;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     .box {
         display: flex;
         justify-content: center;
         padding: 35px 0;
     }
 }
-@media (max-widht: 500px){
+@media (min-width: 768px) and (max-width: 1024px) {
     .conteiner {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
-
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .conteiner {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 1201px) {
+    .conteiner {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0px 100px 0px 100px;
+    }
+}
 
 .trust {
     grid-area: trust;

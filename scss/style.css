@@ -15,10 +15,10 @@ body {
 .services {
   padding: 0 30px 60px 30px;
   border-radius: 0 0 12px 12px;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 60px;
-  background: linear-gradient(75deg, #643e72, #323264, #323264);
+  background: linear-gradient(75deg, rgb(100, 62, 114), rgb(50, 50, 100), rgb(50, 50, 100));
 }
 .services .title-card {
   display: flex;
@@ -28,8 +28,18 @@ body {
 }
 .services .box-card {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 60px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .services .box-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1025px) {
+  .services .box-card {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .services .card {
   display: flex;
@@ -38,10 +48,10 @@ body {
 .services .card .icons {
   padding: 14px;
   border-radius: 24px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 .services h3 {
-  color: #24a3ff;
+  color: rgb(36, 163, 255);
   font-size: 22px;
   font-weight: 700;
   line-height: normal;
@@ -50,14 +60,14 @@ body {
   padding-bottom: 15px;
 }
 .services p {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
   margin: 0;
 }
 .services a {
-  color: #24a3ff;
+  color: rgb(36, 163, 255);
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -71,7 +81,7 @@ body {
   display: inline-block;
   width: 12px;
   height: 12px;
-  color: #24a3ff;
+  color: rgb(36, 163, 255);
 }
 .services h2 {
   margin: 0;
@@ -90,15 +100,14 @@ body {
 }
 
 .clients {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 30px;
-  grid-template-areas: "trust" "conteiner";
 }
 
 .conteiner {
-  grid-area: conteiner;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 .conteiner .box {
   display: flex;
@@ -106,9 +115,20 @@ body {
   padding: 35px 0;
 }
 
-@media (max-widht: 500px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .conteiner {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .conteiner {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1201px) {
+  .conteiner {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0px 100px 0px 100px;
   }
 }
 .trust {
@@ -169,4 +189,4 @@ body {
 
 .ultimatecard {
   background: black;
-}
+}/*# sourceMappingURL=style.css.map */
