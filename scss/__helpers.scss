@@ -2,24 +2,24 @@
 
 * {
     box-sizing: border-box;
-    h2, h3, h4, p {
+    h2, h3, h4, p, hr {
         margin: 0;
     }
 }
 
 body {
     font-family: Montserrat, sans-serif;
-}
-.fonback {
-    background: linear-gradient(75deg, rgba(100,62,114,1),
-    rgba(50,50,100,1),rgba(50,50,100,1));
-}
 
+}
 .wrapper {
     margin-left: auto;
     margin-right: auto;
     // width: 375px;
 }
+.fonback {
+    background: linear-gradient(75deg, rgba(100,62,114,1), rgba(50,50,100,1), rgba(50,50,100,1));
+}
+
 // @media (min-width: 376px) and (max-width: 768px) {
 //     .wrapper {
 //         width: 768px;

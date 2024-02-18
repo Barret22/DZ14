@@ -1,2 +1,56 @@
 
-
+.splash {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 600px;
+    position: relative;
+    .symbol-button-box {
+        position: fixed;
+        overflow: hidden;
+        bottom: 0%;
+    }
+    .symbol {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        .symbol-button::after{
+            display: inline-block;
+            content: '';
+            width: 42px;
+            height: 42px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../css/image/Scroll.png);
+            background-color: transparent;
+        }
+    }
+    .symbol::before {
+        display: inline-block;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        color: rgba(255, 255, 255, 1);
+        background-image: url(../css/image/symbol.png)
+    }
+    .symbol-box-text {
+        display: flex;
+        position: fixed;
+        overflow: hidden;
+        bottom: 43%;
+        padding: 0 25%;
+        .symbol-text {
+            color: rgba(255, 255, 255, 1);
+            text-align: center;
+            font-size: 38px;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+}
