@@ -95,11 +95,12 @@
             </section>
         </div>
         <section class="team">
-            <picture >
-                <source srcset="./css/images/team-tablet.webp" media="(min-widht: 768px) and (max-widht: 1024px)">
-                <source srcset="./css/images/team-leptop.webp" media="(min-widht: 1025px) and (max-widht: 1440px)">
-                <source srcset="./css/images/team-desctop.webp" media="(min-widht: 1440px) and (max-widht: 1920px)">
-                <img class="team-image" src="./css/images/team-mobile.jpg" alt="">
+            <picture>
+                <source srcset="./css/images/team-desctop.webp, ./css/images/team-desctop@2x.webp 2x" type="image/webp" media="(min-width: 1440px)">
+                <source srcset="./css/images/team-leptop.webp, ./css/images/team-leptop@2x.webp 2x" type="image/webp" media="(min-width: 1024px)">
+                <source srcset="./css/images/team-tablet.webp, ./css/images/team-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                <source srcset="./css/images/team-mobile.webp, ./css/images/team-mobile@2x.webp 2x" type="image/webp">
+                <img src="./css/images/team-mobile.jpg" alt="">
             </picture>
             <div class="team-box">
                 <div class="team-box-link">
@@ -168,7 +169,13 @@
                 <div class="publications-title">We have something to tell</div>
             </div>
             <div class="publications-boxa">
-                <img class="publications-image" src="./css/image/CoverEquityassociate.jpg" width="300" height="200" alt="Equity">
+                <picture>
+                    <source srcset="./css/images/boxa-desctop.webp, ./css/images/boxa-desctop@2x.webp 2x" type="image/webp" media="(min-width: 1440px)">
+                    <source srcset="./css/images/boxa-leptop.webp, ./css/images/boxa-leptop@2x.webp 2x" type="image/webp" media="(min-width: 1024px)">
+                    <source srcset="./css/images/boxa-tablet.webp, ./css/images/boxa-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                    <source srcset="./css/images/boxa-mobile.webp, ./css/images/boxa-mobile@2x.webp 2x" type="image/webp">
+                    <img src="./css/images/boxa-mobile.jpg" alt="">
+                </picture>
                 <div class="publications-card">
                     <h3 class="publications-subtitle">Equity associate</h3>
                     <p class="publications-data">April 22</p>

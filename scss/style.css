@@ -334,7 +334,7 @@ template {
   flex-direction: column;
   position: fixed;
   overflow: hidden;
-  bottom: 83%;
+  bottom: 84%;
   width: 100%;
 }
 .header .contact-box {
@@ -835,7 +835,6 @@ template {
 
 .publications-image {
   border-radius: 8px 8px 0px 0px;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
