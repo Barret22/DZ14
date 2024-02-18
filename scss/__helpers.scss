@@ -1,0 +1,44 @@
+
+
+* {
+    box-sizing: border-box;
+    h2, h3, h4, p {
+        margin: 0;
+    }
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+.fonback {
+    background: linear-gradient(75deg, rgba(100,62,114,1),
+    rgba(50,50,100,1),rgba(50,50,100,1));
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    // width: 375px;
+}
+// @media (min-width: 376px) and (max-width: 768px) {
+//     .wrapper {
+//         width: 768px;
+//     }
+// }
+// @media (min-width: 769px) and (max-width: 1024px) {
+//     .wrapper {
+//         width: 1024px;
+//     }
+// }
+
+// @media (min-width: 1025px) and (max-width: 1440px) {
+//     .wrapper {
+//         width: 1440px;
+//     }
+// }
+
+// @media (min-width: 1441px) and (max-width: 1920px) {
+//     .wrapper {
+//         width: 1920px;
+//     }
+// }

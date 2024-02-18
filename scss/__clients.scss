@@ -1,0 +1,89 @@
+
+
+
+.clients {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.conteiner {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 12px;
+    .hillel {
+        background: #1c4280;
+    }
+    .wanna {
+        background: #143646;
+    }
+    .tapgerine {
+        background: #f48b30;
+    }
+    .look {
+        background: #9e4dc3;
+    }
+    .orangerang {
+        background: #fd9339;
+    }
+    .adtelligent {
+        background: #e2e2e4;
+    }
+    .clikki {
+        background: #c71c36;
+    }
+    .ecoleasing {
+        background: #dcf3f9;
+    }
+    .infratek {
+        background: #eaeaea;
+    }
+    .sitipark {
+        background: #282240;
+    }
+    .artprintstudio {
+        background: #1d4568;
+    }
+    .ultimatecard {
+        background: black;
+    }
+    .box {
+        display: flex;
+        justify-content: center;
+        padding: 30px 0;
+        .trust {
+            color: #323264;
+            display: flex;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 17px;
+            text-transform: uppercase; 
+            padding: 0;
+        }
+    } 
+}
+
+@media (max-width: 768px) {
+    .box:nth-child(n + 7) {
+        display: none;
+      }
+    
+
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .conteiner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .conteiner {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 1201px) and (max-width: 1920px) {
+    .conteiner {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 100px;
+    }
+}
