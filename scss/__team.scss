@@ -3,16 +3,40 @@
 
 .team {
     display: flex;
-    padding: 0px 30px;
+    padding: 30px 30px 0 30px;
     flex-direction: column;
     align-items: center;
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .team {
+        padding: 60px 60px 0 60px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .team {
+        flex-direction: row;
+        padding: 60px 60px 0 60px;
+    }
+}
+@media (min-width: 1441px)  and (max-width: 1920px) {
+    .team {
+        flex-direction: row;
+        padding: 0px 60px;
+    }
+}
+    @media (min-width: 1921px) {
+        .team {
+            flex-direction: row;
+            padding: 0px 60px;
+        }
+}
 .team-image {
+    display: flex;
+    flex-direction: column;
     border-radius: 12px 12px 0 0;
-    // width: 100%;
-    // height: 300px;
-    object-fit: cover;
-   
+    width: 100%;
+    object-fit: cover;   
 }
 .team-box {
     display: flex;

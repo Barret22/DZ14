@@ -1,7 +1,6 @@
 
 
 .services {
-
     padding: 0 30px 60px 30px;
     border-radius: 0 0 12px 12px;
     display: flex;
@@ -61,12 +60,17 @@
             grid-template-columns: repeat(2, 1fr);
         }
     }
-    @media (min-width: 1025px) and (max-width: 1200px) {
+    @media (min-width: 1025px) and (max-width: 1440px) {
         .box-card {
             grid-template-columns: repeat(3, 1fr);
         }
     }
-    @media (min-width: 1201px) and (max-width: 1920px) {
+    @media (min-width: 1441px)  and (max-width: 1920px) {
+        .box-card {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+        @media (min-width: 1921px) {
         .box-card {
             grid-template-columns: repeat(3, 1fr);
         }

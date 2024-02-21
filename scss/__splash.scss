@@ -37,11 +37,32 @@
         background-size: contain;
         background-repeat: no-repeat;
         color: rgba(255, 255, 255, 1);
-        background-image: url(../css/image/symbol.png)
+        background-image: url(../css/image/symbol-mobile@2x.png);
     }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .symbol::before {
+            background-image: url(../css/image/symbol-tablet@2x.png);
+        }
+    }
+    @media (min-width: 1025px) and (max-width: 1440px) {
+        .symbol::before {
+            background-image: url(../css/image/symbol-leptop@2x.png);
+        }
+    }
+    @media (min-width: 1441px)  and (max-width: 1920px) {
+        .symbol::before {
+            background-image: url(../css/image/symbol-desctop@2x.png);
+        }
+    }
+    @media (min-width: 1921px) {
+        .symbol::before {
+            background-image: url(../css/image/symbol-desctop@2x.png);
+        }
+    }
+
     .symbol-box-text {
         display: flex;
-        position: fixed;
+        position: absolute;
         overflow: hidden;
         bottom: 43%;
         padding: 0 25%;
