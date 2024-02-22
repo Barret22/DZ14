@@ -7,95 +7,95 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    .rectangle {
+    .separator {
         height: 2px;
+        align-self: stretch;
+        background-color: rgba(230, 230, 240, 1);
     }
-    .contacts {
+.contact-box {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        .contact-box {
+        gap: 21px;
+    }
+        .direction {
+            align-self: flex-start;
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 21px;
+            gap: 10px;
+            address {
+                color: rgba(50, 50, 100, 1);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1;
+            }
+            .map {
+                color: rgba(36, 163, 255, 1);
+                font-size: 12px;
+                font-weight: 700;
+                line-height:1;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
         }
-            .direction {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-                address {
-                    color: rgba(50, 50, 100, 1);
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 1;
-                }
-                .map {
-                    color: rgba(36, 163, 255, 1);
-                    font-size: 12px;
-                    font-weight: 700;
-                    line-height:1;
-                    letter-spacing: 1px;
-                    text-transform: uppercase;
-                    text-decoration: none;
-                }
+        .contact-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            .facebook::after {
+                display: inline-block;
+                content: '';
+                width: 38px;
+                height: 38px;
+                color: rgba(36, 163, 255, 1);
+                background-image: url(../css/image/facebook-footer.png);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
             }
-            @media (min-width: 768px) {
-                .direction {
-                    flex-direction: row;
-                }
+            .phone {
+                color: rgba(70, 70, 110, 1);
+                text-align: right;
+                font-size: 16px;
+                font-weight: 700;
+                line-height:1;
+                text-decoration: none;
             }
+            .mail {
+                color: rgba(36, 163, 255, 1);
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 1;
+                text-decoration: none;
+            }
+        }
+        @media (min-width: 768px) {
             .contact-link {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-                .facebook::after {
-                    display: inline-block;
-                    content: '';
-                    width: 38px;
-                    height: 38px;
-                    color: rgba(36, 163, 255, 1);
-                    background-image: url(../css/image/facebook-footer.png);
-                    background-position: center;
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                }
-                .phone {
-                    color: rgba(70, 70, 110, 1);
-                    text-align: right;
-                    font-size: 16px;
-                    font-weight: 700;
-                    line-height:1;
-                    text-decoration: none;
-                }
-                .mail {
-                    color: rgba(36, 163, 255, 1);
-                    font-size: 16px;
-                    font-weight: 700;
-                    line-height: 1;
-                    text-decoration: none;
-                }
+                flex-direction: row;
             }
-            @media (min-width: 768px) {
-                .contact-link {
-                    flex-direction: row;
-                }
-        }
-        h2 {
-            color: rgba(179, 179, 186, 1);
-            text-align: center;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 1;
-        }
-    } 
-    @media (min-width: 768px) {
-        .contacts {
-            flex-direction: row;
-        }
-    } 
-}
+    }
+    h2 {
+        color: rgba(179, 179, 186, 1);
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1;
+    }
+} 
+
+@media (min-width: 768px) {
+    .footer {
+        padding: 0 60px;
+    }
+    .contacts {
+        display: flex;
+        flex-direction: row;
+        .ps {
+            padding-left: 50px;
+
+        }    
+    }
+} 
