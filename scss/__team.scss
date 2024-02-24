@@ -84,7 +84,8 @@
         line-height: 1;
         letter-spacing: 1px;
         text-transform: uppercase;
-        text-decoration: none;    }
+        text-decoration: none;  
+    }
     h3 {
     font-size: 30px;
     font-weight: 700;
@@ -94,49 +95,53 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     }
+    @media (min-width: 768px) and (max-width: 3000px) {
+        .publications-title {
+            font-size: 38px;
+        }
     h4 {
         color: rgba(179, 179, 186, 1);
         font-size: 16px;
         font-weight: 700;
         line-height:1;
-        }
+    }
     p {
         color: rgba(179, 179, 186, 1);
         font-size: 14px;
         font-weight: 400;
         line-height:1; 
     }
-
-}
-.team-link::after {
-    display: inline-block;
-    content: '';
-    width: 12px;
-    height: 12px;
-    background-image: url(../css/image/back.png);
-    color: rgba(36, 163, 255, 1);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.paginator {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding-top: 30px;
-    padding-bottom: 60px;
-    .ellipse {
+    }
+    .team-link::after {
         display: inline-block;
         content: '';
-        width: 16px;
-        height: 16px;
-        background-image: url(../css/image/ellipselight.png);
+        width: 12px;
+        height: 12px;
+        background-image: url(../css/image/back.png);
         color: rgba(36, 163, 255, 1);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
     }
-    .ellipse:first-of-type {
-        background-image: url(../css/image/ellipse.png);
+    .paginator {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding-top: 30px;
+        padding-bottom: 60px;
+        .ellipse {
+            display: inline-block;
+            content: '';
+            width: 16px;
+            height: 16px;
+            background-image: url(../css/image/ellipselight.png);
+            color: rgba(36, 163, 255, 1);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .ellipse:first-of-type {
+            background-image: url(../css/image/ellipse.png);
+        }
     }
 }

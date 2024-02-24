@@ -56,16 +56,18 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+// @media (min-width: 768px) and (max-width: 3000px) {
+//     .publications-title {
+//         font-size: 38px;
+//     }
+    
+
 .publications-image {
     border-radius: 8px 8px 0px 0px;
     width: 100%;
     object-fit: cover;
 }
-// .publications-boxa {
-//     background-color: rgba(255, 255, 255, 1);
-    
 
-// }
 .publications-card {
     display: flex;
     flex-direction: column;
