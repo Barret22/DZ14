@@ -531,10 +531,10 @@ template {
   flex-direction: row;
   flex-wrap: nowrap;
   padding-left: 30px;
+  justify-content: flex-end;
   align-items: center;
   gap: 30px;
-  overflow-x: scroll;
-  max-width: 100%;
+  overflow: scroll;
 }
 .experience .nav-box .nav-title {
   font-size: 30px;
@@ -749,7 +749,6 @@ template {
     background-color: rgb(245, 245, 250);
   }
 }
-
 .team-image {
   display: flex;
   flex-direction: column;
@@ -794,25 +793,24 @@ template {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media (min-width: 768px) {
-  .team-box h3 {
+@media (min-width: 768px) and (max-width: 3000px) {
+  .team-box .publications-title {
     font-size: 38px;
   }
+  .team-box h4 {
+    color: rgb(179, 179, 186);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .team-box p {
+    color: rgb(179, 179, 186);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+  }
 }
-.team-box h4 {
-  color: rgb(179, 179, 186);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1;
-}
-.team-box p {
-  color: rgb(179, 179, 186);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1;
-}
-
-.team-link::after {
+.team-box .team-link::after {
   display: inline-block;
   content: "";
   width: 12px;
@@ -823,15 +821,14 @@ template {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
-.paginator {
+.team-box .paginator {
   display: flex;
   justify-content: center;
   gap: 15px;
   padding-top: 30px;
   padding-bottom: 60px;
 }
-.paginator .ellipse {
+.team-box .paginator .ellipse {
   display: inline-block;
   content: "";
   width: 16px;
@@ -842,7 +839,7 @@ template {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.paginator .ellipse:first-of-type {
+.team-box .paginator .ellipse:first-of-type {
   background-image: url(../css/image/ellipse.png);
 }
 
@@ -948,6 +945,10 @@ template {
   gap: 30px;
   align-items: start;
 }
+.publications .publications-boxa {
+  height: 100%;
+  background-color: white;
+}
 .publications picture {
   display: block;
   width: 100%;
@@ -986,17 +987,13 @@ template {
 
 .publications-title {
   font-size: 30px;
+  border: 2px;
   font-weight: 700;
   line-height: 1;
   background: linear-gradient(90deg, rgb(240, 20, 90) 0.84%, rgb(239, 128, 128) 99.96%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-@media (min-width: 768px) {
-  .publications-title {
-    font-size: 38px;
-  }
 }
 
 .publications-image {
@@ -1057,18 +1054,12 @@ template {
   }
   .publications-boxa {
     grid-area: publications-boxa;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 1);
   }
   .publications-boxb {
     grid-area: publications-boxb;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 1);
   }
   .publications-boxc {
     grid-area: publications-boxc;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 1);
   }
 }
 @media (min-width: 1024px) and (max-width: 1440px) {
@@ -1086,17 +1077,17 @@ template {
   .publications-boxa {
     grid-area: publications-boxa;
     height: 100%;
-    background-color: rgba(255, 255, 255, 1)
+    background-color: rgb(255, 255, 255);
   }
   .publications-boxb {
     grid-area: publications-boxb;
     height: 100%;
-    background-color: rgba(255, 255, 255, 1)
+    background-color: rgb(255, 255, 255);
   }
   .publications-boxc {
     grid-area: publications-boxc;
     height: 100%;
-    background-color: rgba(255, 255, 255, 1)
+    background-color: rgb(255, 255, 255);
   }
 }
 @media (min-width: 1441px) {
@@ -1114,17 +1105,17 @@ template {
   .publications-boxa {
     grid-area: publications-boxa;
     height: 100%;
-    background-color: rgba(255, 255, 255, 1)
+    background-color: rgb(255, 255, 255);
   }
   .publications-boxb {
     grid-area: publications-boxb;
     height: 100%;
-    background-color: rgba(255, 255, 255, 1)
+    background-color: rgb(255, 255, 255);
   }
   .publications-boxc {
     grid-area: publications-boxc;
     height: 100%;
-    background-color: rgba(255, 255, 255, 1)
+    background-color: rgb(255, 255, 255);
   }
 }
 .footer {

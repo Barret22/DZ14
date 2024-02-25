@@ -135,12 +135,24 @@
         grid-auto-flow: row;
         grid-template-areas:
           "publications-boxa publications-boxb publications-boxc";
-      }
-      .publications-boxa { grid-area: publications-boxa; }
+    }
+    .publications-boxa { 
+        grid-area: publications-boxa; 
+        height: 100%;
+        background-color: rgba(255, 255, 255, 1);
+    }
       
-      .publications-boxb { grid-area: publications-boxb; }
+    .publications-boxb { 
+        grid-area: publications-boxb;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 1);
+    }
       
-      .publications-boxc { grid-area: publications-boxc; }
+    .publications-boxc { 
+        grid-area: publications-boxc;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 1); 
+    }
 }
 
 @media (min-width: 1441px) {
@@ -155,10 +167,22 @@
         grid-auto-flow: row;
         grid-template-areas:
           "publications-boxa publications-boxb publications-boxc";
-      }
-      .publications-boxa { grid-area: publications-boxa; }
+    }
+    .publications-boxa { 
+        grid-area: publications-boxa;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 1); 
+    }
       
-      .publications-boxb { grid-area: publications-boxb; }
+    .publications-boxb { 
+        grid-area: publications-boxb;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 1); 
+    }
       
-      .publications-boxc { grid-area: publications-boxc; }
+    .publications-boxc { 
+        grid-area: publications-boxc;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 1);
+    }
 }
