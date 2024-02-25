@@ -531,10 +531,10 @@ template {
   flex-direction: row;
   flex-wrap: nowrap;
   padding-left: 30px;
-  justify-content: flex-end;
   align-items: center;
   gap: 30px;
-  overflow: scroll;
+  overflow-x: scroll;
+  max-width: 100%;
 }
 .experience .nav-box .nav-title {
   font-size: 30px;
@@ -749,6 +749,7 @@ template {
     background-color: rgb(245, 245, 250);
   }
 }
+
 .team-image {
   display: flex;
   flex-direction: column;
@@ -792,6 +793,11 @@ template {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media (min-width: 768px) {
+  .team-box h3 {
+    font-size: 38px;
+  }
 }
 .team-box h4 {
   color: rgb(179, 179, 186);
@@ -987,6 +993,11 @@ template {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media (min-width: 768px) {
+  .publications-title {
+    font-size: 38px;
+  }
+}
 
 .publications-image {
   border-radius: 8px 8px 0px 0px;
@@ -1046,12 +1057,18 @@ template {
   }
   .publications-boxa {
     grid-area: publications-boxa;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
   }
   .publications-boxb {
     grid-area: publications-boxb;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
   }
   .publications-boxc {
     grid-area: publications-boxc;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
   }
 }
 @media (min-width: 1024px) and (max-width: 1440px) {
@@ -1068,12 +1085,18 @@ template {
   }
   .publications-boxa {
     grid-area: publications-boxa;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1)
   }
   .publications-boxb {
     grid-area: publications-boxb;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1)
   }
   .publications-boxc {
     grid-area: publications-boxc;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1)
   }
 }
 @media (min-width: 1441px) {
@@ -1090,12 +1113,18 @@ template {
   }
   .publications-boxa {
     grid-area: publications-boxa;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1)
   }
   .publications-boxb {
     grid-area: publications-boxb;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1)
   }
   .publications-boxc {
     grid-area: publications-boxc;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1)
   }
 }
 .footer {

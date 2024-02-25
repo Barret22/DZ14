@@ -13,6 +13,10 @@
         gap: 30px;
         align-items: start;
     }
+    .publications-boxa {
+        height: 100%;
+        background-color: white;
+    }
 
     picture {
         display: block;
@@ -49,6 +53,7 @@
 }
 .publications-title {
     font-size: 30px;
+    border: 2px;
     font-weight: 700;
     line-height: 1;
     background: linear-gradient(90deg, rgba(240,20,90,1)0.84%, rgba(239,128,128,1)99.96%);
@@ -56,12 +61,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-// @media (min-width: 768px) and (max-width: 3000px) {
-//     .publications-title {
-//         font-size: 38px;
-//     }
-    
 
+    
 .publications-image {
     border-radius: 8px 8px 0px 0px;
     width: 100%;
@@ -115,11 +116,11 @@
           "publications-boxa publications-boxb"
           "publications-boxc publications-boxc";
       }
-      .publications-boxa { grid-area: publications-boxa; }
+    .publications-boxa { grid-area: publications-boxa; }
       
-      .publications-boxb { grid-area: publications-boxb; }
-      
-      .publications-boxc { grid-area: publications-boxc; }
+    .publications-boxb { grid-area: publications-boxb; }
+    
+    .publications-boxc { grid-area: publications-boxc; }
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {
