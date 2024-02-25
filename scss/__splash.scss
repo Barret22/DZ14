@@ -4,24 +4,25 @@
     flex-direction: column;
     align-items: stretch;
     height: 100vh;
-    position: relative;
-    .symbol-button-box {
-        position: fixed;
-        overflow: hidden;
-        bottom: 0%;
-    }
-    @media (min-width: 768px) {
-        .symbol-button-box {
-            position: absolute;
-        }
-    }
+    // // position: relative;
+    // .symbol-button-box {
+    //     // position: fixed;
+    //     // overflow: hidden;
+    //     // bottom: 0%;
+    // }
+    // @media (min-width: 768px) {
+    //     .symbol-button-box {
+    //     //     position: absolute;
+    //     // }
+    // }
 
     .symbol {
         height: 100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
+     // position: relative;
         .symbol-button::after{
             display: inline-block;
             content: '';
@@ -67,9 +68,9 @@
     }
     .symbol-box-text {
         display: flex;
-        position: absolute;
-        overflow: hidden;
-        bottom: 43%;
+        // position: absolute;
+        // overflow: hidden;
+        // bottom: 43%;
         padding: 0 25%;
         .symbol-text {
             color: rgba(255, 255, 255, 1);
