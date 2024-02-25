@@ -66,12 +66,18 @@
             line-height:1;
             text-decoration: none;
         }
+        .phone:hover {
+            color: rgba(240, 20, 90, 1);
+        }
         .mail {
             color: rgba(36, 163, 255, 1);
             font-size: 16px;
             font-weight: 700;
             line-height: 1;
             text-decoration: none;
+        }
+        .mail:hover {
+            color: rgba(240, 20, 90, 1); 
         }
     }
     @media (min-width: 768px) {

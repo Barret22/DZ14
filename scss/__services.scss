@@ -11,6 +11,9 @@
         gap: 10px;
         align-self: stretch;
         padding-bottom: 60px;
+        .title-services:hover {
+            color: rgba(240, 20, 90, 1);
+        }
     }
     .box-card {
         display: grid;
@@ -84,6 +87,9 @@
             width: 12px;
             height: 12px;
             background-image: url(../css/image/back.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
         }
 
     h2 {

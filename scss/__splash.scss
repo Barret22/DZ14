@@ -2,82 +2,133 @@
 .splash {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
     height: 100vh;
-    // // position: relative;
-    // .symbol-button-box {
-    //     // position: fixed;
-    //     // overflow: hidden;
-    //     // bottom: 0%;
-    // }
-    // @media (min-width: 768px) {
-    //     .symbol-button-box {
-    //     //     position: absolute;
-    //     // }
-    // }
-
-    .symbol {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-     // position: relative;
-        .symbol-button::after{
-            display: inline-block;
-            content: '';
-            width: 42px;
-            height: 42px;
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-image: url(../css/image/Scroll.png);
-            background-color: transparent;
+    justify-content: space-between;
+    color: rgba(240, 20, 90, 1);
+    background-image: url(../css/image/symbol-mobile@2x.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    .header {
+        .contact-box {
+            display: flex;
+            flex-direction: row;
+            padding: 10px 15px;
+            justify-content: space-between;
+            align-items: center;
+            background-color:rgba(245, 245, 250, 0.2);
+            color: rgba(255, 255, 255, 1);
+            a {
+                text-decoration: none;
+                color: rgba(255, 255, 255, 1);
+            }
+            .language-box {
+                display: flex;
+                flex-direction: row;
+                .language {
+                    font-size: 12px;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    padding: 5px 7px;
+                    border-radius: 8px;
+                }
+                .language:hover {
+                    color: rgba(240, 20, 90, 1);
+                }
+            }
+            .phone {
+                font-size: 16px;
+                font-weight: 700;
+            }
+            .phone:hover {
+                color: rgba(240, 20, 90, 1) 
         }
     }
-    .symbol::before {
+        .sub-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0 15px;
+            align-items: center;
+            .sub-header-left {
+                display: flex;
+                padding: 15px 0 10px 0;
+                gap: 15px;
+                .header-logo-box {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    .headerimg {
+                        height: 32px;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .dropdown::after {
+                display: inline-block;
+                content: '';
+                width: 32px;
+                height: 32px;
+                background-image: url(../css/image/Hamburger@2x.png);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+    .header-services {
+        color: rgba(255, 255, 255, 1);
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    }
+    .splash-text {
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+        font-size: 38px;
+        font-weight: 700;
+        width: 88%;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .splash-scrol {
+        width: 42px;
+        height: 42px;
         display: inline-block;
         content: '';
-        width: 100%;
-        height: 100%;
+        background-image: url(../css/image/Scroll@2x.png);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
         color: rgba(255, 255, 255, 1);
-        background-image: url(../css/image/symbol-mobile@2x.png);
+        margin-left: auto;
+        margin-right: auto;
     }
-    @media (min-width: 768px) and (max-width: 1024px) {
-        .symbol::before {
-            background-image: url(../css/image/symbol-tablet@2x.png);
-        }
+    .splash-scrol:hover {
+        color: rgba(240, 20, 90, 1) ;
     }
-    @media (min-width: 1025px) and (max-width: 1440px) {
-        .symbol::before {
-            background-image: url(../css/image/symbol-leptop@2x.png);
-        }
-    }
-    @media (min-width: 1441px)  and (max-width: 1920px) {
-        .symbol::before {
-            background-image: url(../css/image/symbol-desctop@2x.png);
-        }
-    }
-    @media (min-width: 1921px) {
-        .symbol::before {
-            background-image: url(../css/image/symbol-desctop@2x.png);
-        }
-    }
-    .symbol-box-text {
-        display: flex;
-        // position: absolute;
-        // overflow: hidden;
-        // bottom: 43%;
-        padding: 0 25%;
-        .symbol-text {
-            color: rgba(255, 255, 255, 1);
-            text-align: center;
-            font-size: 38px;
-            font-weight: 700;
-            line-height: normal;
+} 
+@media (min-width: 768px) {
+    .splash {
+        background-image: url(../css/image/symbol-tablet@2x.png);
+        padding: 50px 60px 0 60px;
+        .header {
+            .contact-box {
+                background-color:unset;
+            }
+            .sub-header {
+                .dropdown::after {
+                    display: none;
+                }
+            }
         }
     }
 }
+
+
+
+
+
+
+
