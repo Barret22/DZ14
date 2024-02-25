@@ -120,7 +120,15 @@
       
     .publications-boxb { grid-area: publications-boxb; }
     
-    .publications-boxc { grid-area: publications-boxc; }
+    .publications-boxc { 
+        grid-area: publications-boxc;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 1);
+        picture {
+            display: flex;
+            height: 60%;
+        }
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {

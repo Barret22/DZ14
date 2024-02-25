@@ -662,6 +662,11 @@ template {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media (min-width: 768px) {
+  .services h2 {
+    font-size: 38px;
+  }
+}
 
 .bg {
   background-color: rgb(255, 255, 255);
@@ -1060,6 +1065,12 @@ template {
   }
   .publications-boxc {
     grid-area: publications-boxc;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+  }
+  .publications-boxc picture {
+    display: flex;
+    height: 60%;
   }
 }
 @media (min-width: 1024px) and (max-width: 1440px) {
